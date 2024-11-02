@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Book Library</h1>
+      <button id="modal-btn">Add a new book</button>
+      <dialog>
+        <form>
+          <h2>Book info</h2>
+          <label for="title"
+            >Title <span class="label-required">(required)</span></label
+          >
+          <input type="text" required id="title" name="title" />
+          <label for="author"
+            >Author <span class="label-required">(required)</span></label
+          >
+          <input type="text" required id="author" name="author" />
+          <label for="pages"
+            >Pages <span class="label-required">(required)</span></label
+          >
+          <input type="number" required id="pages" name="pages" />
+
+          <div>
+            <label>Read? <span class="label-required">(required)</span></label>
+            <input type="radio" id="status1" name="status" value="Yes" />
+            <label for="status1">Yes</label>
+            <input type="radio" id="status0" name="status" value="Not yet" />
+            <label for="status0">No</label>
+          </div>
+
+          <div class="btn-container">
+            <button type="reset" id="close-btn">Close</button>
+            <button type="submit" id="submit-btn">Submit</button>
+          </div>
+        </form>
+      </dialog>
+    </header>
+    <main>
+      <div>
+        <ul id="book-list"></ul>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
